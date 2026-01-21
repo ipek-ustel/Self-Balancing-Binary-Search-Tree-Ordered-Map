@@ -4,7 +4,7 @@ This repository contains a fully generic, self-balancing Binary Search Tree (BST
 
 **Self-Balancing Logic:** Unlike standard AVL tree, this implementation uses a unique rebuilding strategy. When a subtree violates its balance condition ($H_{actual} > \lfloor \log_2(N) \rfloor$), it is reconstructed into a minimum-height Complete BST.
 
-**Pointer Rewiring Algorithm:** The tree restructuring (conversion to Complete BST) is performed in linear time ($O(n)$) using only pointer rewiring. This ensures: No new node allocations or deletions during rebalancing. Elements remain at their original memory addresses, preserving the integrity of external pointers or references.
+**Pointer Rewiring Algorithm:** The tree restructuring (conversion to Complete BST) is performed in linear time ( $O(n)$ ) using only pointer rewiring. This ensures: No new node allocations or deletions during rebalancing. Elements remain at their original memory addresses, preserving the integrity of external pointers or references.
 
 **Structural Metadata:** Each node maintains height and subsize (subtree size) metadata, updated during recursion to support fast balance checking and lookup operations.
 
